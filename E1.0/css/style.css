@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  align-items: center;
+  } 
+
+.logo {
+				width: 150px
+        }
+
+.search-bar {
+  display: flex;
+  flex-grow: 0.8;
+  margin: 0 2rem 0 4rem;
+}
+
+.search-bar img:first-child {
+  opacity: 0.6;
+}
+
+.search-input {
+  width: 100%;
+}
