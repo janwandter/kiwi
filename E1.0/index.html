@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="icon" href="assets/window-logo.png">
+    <title>Kiwi</title>
 </head>
 <body>
+    <!--NAVEGATION BAR-->
     <header>
       <nav>
           <div class="navbar-menu">
@@ -21,22 +23,148 @@
               </button>
             </form>
             <div class="menu-icons">
-              <a href="#">
-                <img src="assets/trophy.svg" class="notifications-icon">
+              <a href="#" class="notifications-icon">
+                <img src="assets/trophy.svg" >
               </a>
-              <a>
-                Juan Perez
+              <a href="profile.html" class="my-profile">
+                <span class="current-user-name">Juan Pablo</span>
                 <img src="assets/person.svg" class="profile-icon">
               </a>
             </div>
           </div>
       </nav>
     </header>
-    <section class="videos-section">
+    <!--CONTNEDOR DE LA IZQUIERDA PARA EXPLORAR-->
+    <div class="wrapper-list">
+      <aside class="actions">
+          <h2><a href="#" class="explore"><img src="assets/explore.svg" alt="">Explorar</a></h2>
+          <ul class="action-buttons">
+          <div class="subcategories">
+            <li>
+              <a href="#"><img src="assets/cardio.svg" alt="">Cardio</a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/fuerza.svg" alt="">Fuerza</a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/potencia.svg"" alt="">Potencia</a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/elongacion.svg" alt="">Elongación</a>
+            </li>
+          </div>
+          </ul>
+            <h2><a href="#" class="discover"><img src="assets/discover.svg" alt="">Descubrir</a></h2>
+      </aside>
+    
+      <!--CONTNEDOR CENTRAL DE VIDEOS-->
       <article class="video-container">
-        
+        <ul class="videos">
+          <li class="each-video">
+              <img src="assets/avatar.jpg" alt="Avatar" class="avatar">
+              <div class="info">
+                <strong>Thor</strong>
+                <img src="assets/routine.jpg" class ="publication">
+                <div class="reactions">
+                  <a href=""><img src="assets/add_task.svg" alt="Excercise"> 35 </a>
+                  <a href=""><img src="assets/like.svg" alt="Like"> 150 </a>
+                </div>
+                <p>Et aperiam aut necessitatibus officia voluptas. Nesciunt eveniet aperiam. Quo corporis iste voluptatem
+                  est perspiciatis commodi dicta sit et. Quibusdam quas aliquam et voluptas adipisci fugiat.</p>
+                <div>
+                  <a href=""><img src="assets/cardio.svg" alt="Excercise">★★</a>
+                  <a href=""><img src="assets/fuerza.svg" alt="Like">★★★★★</a>
+                  <a href=""><img src="assets/potencia.svg" alt="Excercise">★</a>
+                  <a href=""><img src="assets/elongacion.svg" alt="Excercise">★★</a>
+              </div>
+          </li>
+          <li class="each-video">
+              <img src="assets/avatar.jpg" alt="Avatar" class="avatar">
+              <div class="info">
+                <strong>Thor</strong>
+                <img src="assets/routine.jpg" class ="publication">
+                <div class="reactions">
+                  <a href=""><img src="assets/add_task.svg" alt="Excercise"> 35 </a>
+                  <a href=""><img src="assets/like.svg" alt="Like"> 150 </a>
+                </div>
+                <p>Et aperiam aut necessitatibus officia voluptas. Nesciunt eveniet aperiam. Quo corporis iste voluptatem
+                  est perspiciatis commodi dicta sit et. Quibusdam quas aliquam et voluptas adipisci fugiat.</p>
+                <div>
+                  <a href=""><img src="assets/cardio.svg" alt="Excercise">★★</a>
+                  <a href=""><img src="assets/fuerza.svg" alt="Like">★★★★★</a>
+                  <a href=""><img src="assets/potencia.svg" alt="Excercise">★</a>
+                  <a href=""><img src="assets/elongacion.svg" alt="Excercise">★★</a>
+              </div>
+          </li>
+          <li class="each-video">
+              <img src="assets/avatar.jpg" alt="Avatar" class="avatar">
+              <div class="info">
+                <strong>Thor</strong>
+                <img src="assets/routine.jpg" class ="publication">
+                <div class="reactions">
+                  <a href=""><img src="assets/add_task.svg" alt="Excercise"> 35 </a>
+                  <a href=""><img src="assets/like.svg" alt="Like"> 150 </a>
+                </div>
+                <p>Et aperiam aut necessitatibus officia voluptas. Nesciunt eveniet aperiam. Quo corporis iste voluptatem
+                  est perspiciatis commodi dicta sit et. Quibusdam quas aliquam et voluptas adipisci fugiat.</p>
+                <div>
+                  <a href=""><img src="assets/cardio.svg" alt="Excercise">★★</a>
+                  <a href=""><img src="assets/fuerza.svg" alt="Like">★★★★★</a>
+                  <a href=""><img src="assets/potencia.svg" alt="Excercise">★</a>
+                  <a href=""><img src="assets/elongacion.svg" alt="Excercise">★★</a>
+              </div>
+          </li>
+        </ul>
       </article>
-    </section>
 
+
+      <aside class="widgets">
+        <div class="widget follow">
+          <div class="title">
+            <strong>Who to follow</strong>
+            <a href="">Refresh</a>
+            <a href="">View all</a>
+          </div>
+  
+          <ul>
+            <li>
+              <div class="profile">
+                <img src="/images/avatar2.png" alt="Avatar2">
+                <div class="info">
+                  <strong>Spade <span>@spade_be</span></strong>
+                  <button>Follow</button>
+                </div>
+              </div>
+              <a href="">x</a>
+            </li>
+  
+            <li>
+              <div class="profile">
+                <img src="/images/avatar2.png" alt="Avatar2">
+                <div class="info">
+                  <strong>Spade <span>@spade_be</span></strong>
+                  <button>Follow</button>
+                </div>
+              </div>
+              <a href="">x</a>
+            </li>
+  
+            <li>
+              <div class="profile">
+                <img src="/images/avatar2.png" alt="Avatar2">
+                <div class="info">
+                  <strong>Spade <span>@spade_be</span></strong>
+                  <button>Follow</button>
+                </div>
+              </div>
+              <a href="">x</a>
+            </li>
+          </ul>
+  
+        </div>
+  
+      </aside>
+  
+    </div>  
 </body>
 </html>
