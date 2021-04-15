@@ -29,11 +29,11 @@ a {
   align-items: center;
   border-bottom: 1px solid #9999;
   background-color: white;
-  } 
+} 
 
 .logo {
-				width: 150px
-        }
+	width: 150px
+}
 
 .search-bar {
   display: flex;
@@ -73,10 +73,10 @@ a {
 .current-user-name {
   vertical-align: .3rem;
   margin-right: auto;
-  
 }
 
-/* boady */
+/* body */
+/*Información del perfil*/
 .wrapper {
   display: flex;
   list-style-type: none;
@@ -93,7 +93,9 @@ a {
   font-size: 28px;
   margin: 5px 0 0 5px;
   list-style-type: none;
+  padding: 5rem 0;
 }
+
 .wrapper article.profile div.profile-image {
   width: 270px;
   height: 200px;
@@ -102,7 +104,10 @@ a {
   list-style-type: none;
   margin-top: -3em;
   margin-left: 0rem;
+  justify-content: center;
+  align-items: center;
 }
+
 .wrapper article.profile div.profile-image img {
   border-radius: 50%;
   height: 170px;
@@ -121,6 +126,7 @@ a {
   font-weight: 300;
   margin-top: 0em;
 }
+
 .wrapper article.profile div.profile-stats {
   margin-top: 1.5rem;
 }
@@ -132,10 +138,12 @@ a {
   margin-right: 3rem;
   cursor: pointer;
 }
+
 .wrapper article.profile div.profile-stats li:last-of-type {
   margin-right: 0;
   border: none;
 }
+
 .wrapper article.profile div.profile-stats li span {
   display: block;
   text-transform: uppercase;
@@ -145,7 +153,7 @@ a {
   font-weight:700;
 }
 
-
+/*Puntuación de la izquierda*/
 article.puntuation{
   border: 2px solid #9999;
   background-color: #fff;
@@ -165,6 +173,7 @@ article.puntuation h2 {
   font-size: 30px;
   border-radius: 900px;
 }
+
 article.puntuation img {
   padding-right: 5px;
 }
@@ -174,12 +183,14 @@ article.puntuation ul.actions div.subcategories li > img {
   width: 48px;
   border-radius: 50%;
 }
+
 article.puntuation li {
   list-style-type: none;
   margin: 0px 0px 10px 0px;
   border-radius: 900px;
 }
 
+ /*Galería de publicaciones*/
 .gallery{
   display: flex;
   flex: 1;
@@ -285,100 +296,4 @@ article.puntuation li {
 
 .gallery article.video-container ul.videos li .reactions a img{
   margin-right: 5px;
-}
-
-
-/* Profile Section */
-
-.profile {
-    padding: 5rem 0;
-}
-.profile-image {
-    float: left;
-    width: calc(33.333% - .5rem);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 2rem;
-}
-.profile-image img {
-    border-radius: 80%;
-}
-.profile-user-settings {
-    margin-top: 1.3rem;
-}
-
-.profile-user-name {
-    display: inline-block;
-    font-size: 3.1rem;
-    font-weight: 300;
-}
-.profile-stats {
-    margin-top: 1.5rem;
-}
-
-.profile-stats li {
-    display: inline-block;
-    font-size: 1.6rem;
-    line-height: 1.5;
-    margin-right: 3rem;
-    cursor: pointer;
-}
-.profile-stats li:last-of-type {
-    margin-right: 0;
-    border: none;
-}
-.profile-stats li span {
-    display: block;
-    text-transform: uppercase;
-    font-family: "Open Sans", Arial, sans-serif;
-    font-size: 1.2em;
-    margin-top: .3em;
-    font-weight:700;
-  }
-
-.profile-bio {
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-top: 2.3rem;
-}
-
-.profile-real-name,
-.profile-stat-count,
-.profile-edit-btn {
-    font-weight: 600;
-}
-  
-.wrapper {
-    display: grid;
-    grid-template-columns: minmax(300px, auto);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(300px, auto);
-}
-.one {
-    grid-column: 1;
-    grid-row: 1;
-    max-width: 93.5rem;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-.two {
-    grid-column: 2 / 4;
-    grid-row: 1;
-    
-}
-.three {
-    grid-column: 1;
-    grid-row: 2 / 5;
-    max-width: 93.5rem;
-    margin: 0 auto;
-    padding: 0 2rem;
-}
-.four {
-    grid-column: 2 / 4;
-    grid-row: 2 / 5;
-    max-width: 93.5rem;
-    margin: 0 auto;
-    padding: 0 2rem;
 }
