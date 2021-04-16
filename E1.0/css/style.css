@@ -72,25 +72,25 @@ a {
 
 .current-user-name {
   vertical-align: .3rem;
-  margin-right: auto;
-  
+  margin-right: auto; 
 }
 
 .wrapper-list {
   display: flex;
   list-style-type: none;
   background-color: #E6ECF0;
+
 }
 
 .wrapper-list aside.actions {
-  border: 2px solid #9999;
+  border: 1px solid #9999;
   background-color: #fff;
-  border-radius: 10px;
-  position: fixed;
+  position: sticky;
+  top: 82px;
   width: 230px;
   height: 350px;
   font-size: 28px;
-  margin: 5px 0 0 5px;
+  margin: 15px 0 0 50px;
 }
 
 .wrapper-list aside.actions img {
@@ -116,79 +116,112 @@ a {
   border-radius: 900px;
 }
 
-.wrapper-list article.video-container {
+.wrapper-list .video-container {
   flex: 1;
-  background: #fff;
-  margin: 10px 0 0 270px;
+  background-color: #E6ECF0;
+  margin: 5px 20px;
+  padding: 0%;
+  max-width: 850px;
 }
 
 div.wrapper-list ul.videos {
   list-style-type: none;
 }
 
-div.wrapper-list article.video-container ul.videos li {
+div.wrapper-list section.video-container ul.videos li {
+  background-color: #fff;
   border-bottom: 1px solid #e6ecf0;
-  padding: 10px 15px;
-  display: flex;
+  margin: 0 0 20px 0;
   list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 0;
 }
 
-div.wrapper-list .video.container ul.videos li > img {
-  height: 48px;
-  width: 48px;
-  border-radius: 50%;
+div.wrapper-list section.video-container ul.videos li:first-child {
+  justify-content: left;
+  align-items: center;
 }
 
-div.wrapper-list article.video-container ul.videos {
-  list-style: none
+div.wrapper-list section.video-container ul.videos {
+  list-style: none;
+  border-bottom: 1px solid #9999;
+  padding-left: 0;
 }
 
-div.wrapper-list article.video-container ul.videos li {
+div.wrapper-list section.video-container ul.videos li {
   border-bottom: 1px solid #e6ecf0;
   padding: 10px 15px;
   display: flex;
 }
 
 .avatar {
-  height: 56px;
-  width: 56px;
+  height: 48px;
+  width: 48px;
   border-radius: 50%;
 }
 
-.publication {
-  height: 450px;
-  width: 450px;
+.profile-uploader {
+  width: 100%;
+  align-items: center;
+  margin-left: 0;
 }
 
-div.wrapper-list article.video-container ul.videos li .info {
+.publication {
+  max-width: 100%;
+  margin-top 10%;
+  border-top: 1px solid #999;
+}
+
+div.wrapper-list section.video-container ul.videos li .info {
   margin-left: 10px;
   display: flex;
   flex-direction: column;
 }
 
-div.wrapper-list article.video-container ul.videos li .info strong {
+.reactions{
+  padding-bottom: 1rem;
+  max-height: 100px;
+  font-size: 16;
+  border-bottom: 1px solid #9999;
+}
+
+
+div.wrapper-list section.video-container ul.videos li .profile-uploader strong {
   font-size: 14px;
   color: #1f2326;
+  vertical-align: 1rem;
 }
 
-div.wrapper-list article.video-container ul.videos li .info strong span {
-  font-weight: normal;
-  font-size: 13px;
-  color: #7b8b9a;
+.description {
+  display: flex;
+  padding: 10px;
+  align-items: top;
 }
 
-div.wrapper-list article.video-container ul.videos li .info p {
+.img-categories {
+  min-width: 100px;
+}
+
+.img-categories a{
+  min-width: 100px;
+}
+
+div.wrapper-list section.video-container ul.videos li .info .description p {
   font-size: 14px;
   color: #1f2326;
   margin-top: 5px;
+  padding-left: 1rem;
+  max-width: 100%;
 }
 
-div.wrapper-list article.video-container ul.videos li .reactions {
+div.wrapper-list section.video-container ul.videos li .reactions {
   display: flex;
   margin-top: 20px;
 }
 
-div.wrapper-list article.video-container ul.videos li .reactions a {
+div.wrapper-list section.video-container ul.videos li .reactions a {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -198,10 +231,116 @@ div.wrapper-list article.video-container ul.videos li .reactions a {
   margin-left: 30px;
 }
 
-div.wrapper-list article.video-container ul.videos li .reactions a:first-child {
+div.wrapper-list section.video-container ul.videos li .reactions a:first-child {
   margin-left: 0;
 }
 
-div.wrapper-list article.video-container ul.videos li .reactions a img{
+div.wrapper-list section.video-container ul.videos li .reactions a img{
   margin-right: 5px;
+}
+
+div.wrapper-list aside.widgets {
+  width: 290px;
+}
+
+div.wrapper-list aside.widgets .widget {
+  background: #fff;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+div.wrapper-list aside.widgets .widget .title {
+  display: flex;
+  align-items: baseline;
+}
+
+div.wrapper-list aside.widgets .widget .title strong{
+  font-size: 18px;
+  color: #1f2226;
+}
+
+div.wrapper-list aside.widgets .widget .title a {
+  color: #3bb9e3;
+  font-size: 12px;
+  text-decoration: none;
+  position: relative;
+  padding-left: 10px;
+}
+
+div.wrapper-list aside.widgets .widget .title a::before {
+  content: '';
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: #000;
+  position: absolute;
+  left: 4px;
+  top: 6px;
+}
+
+div.wrapper-list aside.widgets .follow ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+div.wrapper-list aside.widgets .follow ul li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccd6dd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+div.wrapper-list aside.widgets .follow ul li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border: 0;
+}
+
+div.wrapper-list aside.widgets .follow ul li .profile {
+  display: flex;
+  align-items: center;
+}
+
+div.wrapper-list aside.widgets .follow ul li .profile img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+div.wrapper-list aside.widgets .follow ul li .profile .info {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.wrapper-list aside.widgets .follow ul li .profile .info strong {
+  font-size: 14px;
+  color: #1f2326;
+}
+
+div.wrapper-list aside.widgets .follow ul li .profile .info strong span {
+  font-weight: normal;
+  color: #9a9a9a;
+}
+
+div.wrapper-list aside.widgets .follow ul li .profile .info button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 27px;
+  width: 90px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #3bb9e3;
+  border: 1px solid #3bb9e3;
+  border-radius: 16px;
+  margin-top: 4px;
+}
+
+div.wrapper-list aside.widgets .follow ul li > a {
+  color: #ccd6dd;
+  text-decoration: none;
+  font-size: 14px;
 }
