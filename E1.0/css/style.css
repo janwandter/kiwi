@@ -247,6 +247,8 @@ div.wrapper-list aside.widgets .widget {
   background: #fff;
   padding: 15px;
   margin-top: 10px;
+  position: sticky;
+  top: 82px;
 }
 
 div.wrapper-list aside.widgets .widget .title {
